@@ -2,7 +2,7 @@
 Problem : CountDown of a Input Number
 Topic   : Loops
 Author  : Kainat Amjad
-Time Complexity : O()
+Time Complexity : O(n)
 Space Complexity : O(1)
 
 */
