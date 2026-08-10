@@ -18,13 +18,15 @@ int main(){
     cout<<"Enter the value of n: ";
     cin>>n;
 
-    // For Top Part 
-    // Outer Loop : Controls the number of rows.
-    for(int i=0;i<n;i++){
-    // Inner Loop :Controls what is printed in each row.
-    
-        // For  outer spaces:
-        for(int j=0;j<n-i-1;j++){
+   // Print the top half of the diamond 
+
+    // Outer Loop  controls the number of rows.
+    for(int i=0; i<n; i++){
+
+    // Inner Loop controls what is printed in each row.
+
+    // Print leading spaces
+        for(int j=0; j<n-i-1; j++){
 
             cout<<" ";
                  
@@ -32,8 +34,10 @@ int main(){
             cout<<"*";
 
             if(i!=0){
-             // For Inner spaces:
-            for(int j=0;j<2*i-1;j++){
+
+             // Print spaces between stars
+
+            for(int j=0; j<2*i-1; j++){
                 cout<<" ";
             }
             cout<<"*";
@@ -41,21 +45,21 @@ int main(){
             cout<<endl;   
         }
 
-        // for bottom part.
+        // Print the bottom half of the diamond
         // Outer Loop : Controls the number of rows.
-        for(int i=n-2;i>=0;i--){
+        for(int i=n-2; i>=0; i--){
 
             // outer spaces
 
             // Inner Loop :Controls what is printed in each row.
-            for(int j=0;j<n-i-1;j++){
+            for(int j=0; j<n-i-1; j++){
                 cout<<" ";
             }
             cout<<"*";
         
          if(i!=0){ 
             // for Inner spaces:
-        for(int j=2*i-1;j>0;j--){
+        for(int j=2*i-1; j>0; j--){
            cout<<" ";
         }
         cout<<"*";
